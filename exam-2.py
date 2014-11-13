@@ -10,9 +10,11 @@ def random_number(number):
 	return number
 
 def test1():
+	points_earned = 0
 	upperbound = 1000
 	n1 = random.randint(1, 1000)
-	s1 = "%d is a Even or Odd Number(Type \'even\' | \'odd\'): ?"
+	s1 = "%d is a Even or Odd Number(Type \'even\' | \'odd\'): ?" %n1
+	print s1
 	answer = raw_input("> ")
 	result = even_odd_number(n1)
 	if result == answer:
@@ -42,7 +44,8 @@ check = raw_input("Ready to take: (y/n)")
 print check
 
 if check == 'y':
-	test1()
+	output=test1()
+	print output
 else:
 	print "Thanks"
 
