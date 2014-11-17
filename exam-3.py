@@ -33,22 +33,16 @@ def even_odd_number(number):
 	else:
 		return 'odd'
 
-def start()
-	
-	### Initialize variables 
-	points_earned = 1
+### Initialize variables 
+points_earned = 1
 
-	print """
-	This is a simple test, where you will be asked simple
-	questions regarding mathematics.
-	"""
+print "	This is a simple test, where you will be asked simple questions regarding mathematics."
 
-	check = raw_input("Ready to take (y/n): ")
+check = raw_input("Ready to take (y/n): ")
 
-	points_earned()
-
-	if check == 'y':
-		test1(points_earned)
-	else:
-		print "Thanks"
+if check == 'y':
+	output=test1(points_earned)
+	print output
+else:
+	print "Thanks"
 	
